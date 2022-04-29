@@ -40,7 +40,7 @@ void FoundElement(double[,] array)
 {
     int i = Promt("Введите номер строки: ") - 1;
     int j = Promt("Введите номер столбца: ") - 1;
-    if ((i+1) > array.GetLength(0) && (j+1) > array.GetLength(1)) 
+    if ((i+1) > array.GetLength(0) || (j+1) > array.GetLength(1) || 1>(i+1)||1>(j+1)) 
     {
     Console.WriteLine ("такой позиции не существует");
     return;
